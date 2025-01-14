@@ -5,186 +5,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
 </head>
 
 <body>
 
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-md bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand  text-white" href="#">
-                <!-- //logo -->
-                <!-- <img src="" alt=""> -->
 
-            </a>
-            <img class="img" src="./images/Hiring Mine Logo-453a72d3.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <i class="fa-solid fa-house"></i>
+
+
+              <img src="./pic/logo.png" alt="">
+
+              <i class="fa-solid fa-user ms-4"></i>
+
+              <button type="button" class="btn1 btn btn-warning ms-4">view card</button>
+
+            
+          </div>
+        </div>
+      </nav> -->
+
+
+
+
+    <nav class="navbar navbar-expand-md bg-body-white border border-bottom-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./pic/logo.png" alt="" width="200px" height="70px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto ">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark ps-6 me-3" aria-current="page" href="#">Home</a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            other
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            rewards
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark me-4" href="#">About us</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-dark me-4" href="#">People</a>
+
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-dark me-4" href="#">Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-dark me-4" href="#">Login </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-dark me-4" href="#">Join Now </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-dark me-4" href="#">Employee / Post Job </a>
-                    </li>
+
                 </ul>
+
+                <button type="button" class="btn1 btn btn-warning ms-4">view card</button>
+
+
+                </form>
+
             </div>
         </div>
     </nav>
 
 
-    <!-- navbar end -->
-    <h1 class="text-center mt-4"><B>Dig. Apply</B> </h1>
-    <h1 class="text-center"><B> Prepare Your Future</B> </h1>
 
-    <div class="para text-center"> <b> Hiring Mine connects employer and job seekers, where employers are the source of
-        </b><br>
-        <b>the resources and
-            the job seeker can find and apply for their targeted job.</b>
-    </div>
 
-    <div class="Searchbox"><input type="text" placeholder="Search By Role or Keyword"></div>
 
-    <button class="btn btn-primary ">Find Jobs</button>
 
-    <div class="text-center mt-4">
-        <h4>Popular Searches</h4>
-    </div>
 
-    <div class="btns">
 
-        <button class=" subbtn btn-primary ">Develapor</button>
-        <button class="subbtn btn-primary ">backend</button>
-        <button class="subbtn btn-primary ">backend</button>
-        <button class="subbtn btn-primary ">React</button>
-        <button class="subbtn btn-primary ">Node</button>
-        <button class="subbtn btn-primary ">React Native</button>
-        <button class="subbtn btn-primary ">Fluter</button>
-        <button class="subbtn btn-primary ">UI/UX</button>
-        <button class="subbtn btn-primary ">Designer</button>
-    </div>
 
-    <div class="btnsz">
-        <button class="subbtn btn-primary ">Softwear</button>
-        <button class="subbtn btn-primary ">Web</button>
-        <button class="subbtn btn-primary ">SEO</button>
-        <button class="subbtn btn-primary ">backend</button>
-        <button class="subbtn btn-primary ">Markitnig</button>
-        <button class="subbtn btn-primary ">Writer</button>
-    </div>
 
-    <div class="bg">
-        <!-- background pic lagi v ha css ma  -->
-    </div>
-    <div class="heading2 text-center">
-        <h1> <B> Get Hired In 4</B> <span class="span"><B>Quick Easy Steps</span></B> </h1>
-        <div class="para text-center"><b>The quickest and the most effective way to get hired by the top firm. </b>
-        </div>
-    </div>
+    <div class="header">
 
-    <!-- <div class="containerx">
-
-        <div class="card4" style="width: 18rem;">
-            <i class="p fa-solid fa-user text-center"></i>
-            <div class="card-body">
-                <h5 class=" p text-center">Create Account</h5>
-                <p class=" card-text text-center">Join our vibrant community. Create your account and unlock boundless
-                    opportunities.</p>
-
-            </div>
-
-            <div class="card1" style="width: 18rem;">
-                <i class="p  text-center fa-solid fa-magnifying-glass"></i>
+        <div class="header1">
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/burgur.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="p card-title text-center">Search a Job</h5>
-                    <p class=" card-text text-center">Discover your ideal job. Our intuitive search feature makes job
-                        hunting effortless.</p>
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
 
                 </div>
+            </div>
+        </div>
 
-                <div class="card2" style="width: 18rem;">
-                    <i class="p  text-center fa-regular fa-file"></i>
-                    <div class="card-body">
-                        <h5 class="p card-title text-center">Upload CV/Resume</h5>
-                        <p class=" card-text text-center">Showcase your expertise. Upload your CV or resume and stand
-                            out to employers.</p>
+        <div class="header2">
 
-                    </div>
 
-                    <div class="card3" style="width: 18rem;">
-                        <i class="p  text-center fa-solid fa-user-doctor"></i>
-                        <div class="card-body">
-                            <h5 class="p card-title text-center">Get a Job</h5>
-                            <p class="card-text text-center">Achieve your career goals. Apply for jobs and embark on
-                                your next adventure.</p>
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/images.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
 
-                        </div>
-                    </div>
                 </div>
-            </div> -->
-    <!-- card end -->
-    <!-- start new container heading3 -->
+            </div>
+        </div>
 
-    <div class="bg2"></div>
-    <!-- background pic lagi v ha css ma  -->
 
-    <h1 class="text-center mt-4"> <span class="span"><B> Latest And Top </span> <B>Job Openings</B></B> </h1>
-    <div class="para text-center"><b>We are here to help jobseekers connect with organizer and companies. We are
-            provides <br>
-            the best opportunities to professional people.
 
-        </b>
+
+        <div class="header1">
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/burgur.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header2">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/images.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
+
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
+    <div class="header">
+
+        <div class="header1">
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/main 1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header2">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/images.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="header1">
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/main 1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header2">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="./pic/main 1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your favorites, your way. For $5 or $7!</h5>
+                    <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+                        Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so
+                        Have It
+                        Your Way</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+        <img src="./pic/header.png" alt="">
+    </div>
+
+
+
+
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
